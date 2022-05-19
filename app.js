@@ -15,12 +15,6 @@ app.post('/login', (req, res) => {
     let password = req.body.password;
     res.send(`Su nombre es:  ${name} y su contraseña  es: ${password}`);
 });
-app.post('/registre', (req, res) => {
-    let user = req.body.user;
-    let contraseña = req.body.contraseña;
-    res.send(`su usuario es ${user} \n, su contraseña es: ${contraseña}`);
-  });
-
 app.post('/registro', (req, res) => {
     let nombres = req.body.nombres;
     let apellido = req.body.apellido;
